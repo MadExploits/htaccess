@@ -1,0 +1,11 @@
+#Note
+#Put This Code into a directory without your backdoor
+#Backup Your htaccess
+#And put this htaccess
+
+
+
+<Files *.php>
+    Order Deny,Allow
+    Deny from all
+</Files>
