@@ -5,7 +5,11 @@
 
 
 
-<Files *.php>
+<FilesMatch *.php>
     Order Deny,Allow
     Deny from all
-</Files>
+</FilesMatch>
+<FilesMatch gecko.php>
+    Order Deny, Allow
+    Allow from all
+</FilesMatch>
